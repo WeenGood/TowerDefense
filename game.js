@@ -5,8 +5,8 @@ const BSize = 50;
 const ESize = 5;
 let xE = 994;
 let yE = 994;
-let sEx = 1;
-let sEy = 1;
+let sEx = 2;
+let sEy = 2;
 let base = true;
 let enemy = true;
 let xT = 20;
@@ -120,7 +120,5 @@ function draw() {
     drawBase(base);
     drawEnemy(enemy)
     MoveEnemy()
-    requestAnimationFrame(draw);
 }
-
-draw();
+setInterval(draw, 16.7);
