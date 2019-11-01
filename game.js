@@ -57,7 +57,7 @@ class Tower {
 }
 
 //Создание базы
-let base = new Base(50,50);
+let base = new Base(50, 50);
 
 //Отрисовка базы
 function drawBase(t_base) {
@@ -65,6 +65,9 @@ function drawBase(t_base) {
     ctx.rect(t_base.pos[0], t_base.pos[1], t_base.size, t_base.size);
     ctx.fillStyle = "blue";
     ctx.fill();
+    ctx.font = "18px Arial";
+    ctx.fillStyle = "white";
+    ctx.fillText(life, t_base.pos[0] * 2 - 9, t_base.pos[0] * 2 - 9);
     ctx.closePath();
 }
 
